@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intan Cahya Nabila</title>
+    <link rel="icon" type="image/png" href="/img/IMG_ICN.png"/>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/tech.css">
+    <link rel="stylesheet" href="/css/experience.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/contacts.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#"><img src="/img/IMG_ICN.png" alt="Logo"  /></a>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+
+        <div class="action-buttons">
+            <a href="http://wa.me/6285393206343" target="_blank" rel="noopener noreferrer" class="btn-wa">
+                <i class="fa-brands fa-whatsapp"></i> Let's Talk 
+            </a>
+            <a href="cv.pdf" download class="btn-cv">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+            <span class="mode">
+                <i class="fa-solid fa-moon" id="darkModeToggle" style="cursor:pointer;"></i>
+                <i class="fa-solid fa-sun" id="lightModeToggle" style="display:none; cursor:pointer; color:#ffcc00;"></i>
+            </span>    
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="/img/IMG_intan.jpeg" alt="Avatar">
+                </div>
+            </div>
+                <div class="col-text">
+                    <h1>Hi, I'm Intan 👋</h1>
+                <div>   
+                    <p class="paragraf">Full-Stack Developer</p>
+                    <p class="paragraf2">I build and ship complete web applications from scratch to production. With strong expertise in both frontend and backend development, I create clean user interfaces using HTML and CSS, develop dynamic functionality with JavaScript, and build scalable APIs using Node.js and Express.js, all backed by powerful PostgreSQL databases.</p>
+                </div>
+                    <div class="loc-dot">
+                        <i class="fa-solid fa-location-dot"></i> Bogor, Tanah Sereal, Indonesia
+                        <p><span class="status-dot"></span> Available for new projects</p>
+                    </div>
+                    <div>
+                        <a href="https://github.com/noewebstar" class="gitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/intan-cahya-nabila-32a372377/" class="linkedin" target="_blank" rel="noopener noreferrer" >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <div class="action-buttons2">
+                        <a href="http://wa.me/6285393206343" target="_blank" rel="noopener noreferrer" class="btn-wa">
+                            <i class="fa-brands fa-whatsapp"></i> Let's Talk 
+                        </a>
+                        <a href="cv.pdf" download class="btn-cv">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+        </div>
+            <div class="grid" id="tech-stack">
+                <div>
+                    <h1>Tech Stack - Tools I Use Everyday</h1>
+                </div>
+                <div class="tech-grid">
+                    <div >
+                        <img src="/img/javascript.png" class="tech-icon tech-card" alt="JavaScript">
+                        <p class="tech-name">JavaScript</p>
+                    </div>
+                    <div class="">
+                        <img src="/img/node.png" class="tech-icon tech-card" alt="Node.js">
+                        <p class="tech-name">Node.js</p>
+                    </div>
+                    <div class="">
+                        <img src="/img/express.png" class="tech-icon tech-card" alt="Express.js">
+                        <p class="tech-name">Express.js</p>
+                    </div>
+                    <div class="">
+                        <img src="/img/postgre.png" class="tech-icon tech-card" alt="PostgreSQL">
+                        <p class="tech-name">PostgreSQL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid" id="experience">
+                <div>
+                    <h1>Work Experiences:</h1>
+                </div>
+                <div class="experience-card">
+                    <img src="/img/dumbways.png" alt="DumbWays Logo" class="logoDW">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="position">Bootcamp Full Stack Developer</h3>
+                                <a href="https://dumbways.id/" target="_blank" rel="noopener noreferrer" class="company">DumbWays Indonesia</a>
+                            </div>
+                            <span class="date">July 2025 - Present</span>
+                        </div>
+
+
+                        <ul class="description">
+                            <li>Built a fullstack web application</li>
+                            <li>Developed and implemented CRUD functionality (Create, Read, Update, Delete) for managing project data</li>
+                            <li>Designed and connected a relational database to store project information</li>
+                            <li>Managed dynamic routing and modular architecture using Express.js</li>
+                        </ul>
+
+                        <div class="tags">
+                            <div class="tag">JavaScript</div>
+                            <div class="tag">Node.js</div>
+                            <div class="tag">Express</div>
+                            <div class="tag">PostgreSQL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid" id="projects">
+                <div>
+                    <h1>My Projects :</h1>
+                </div>
+               <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="/img/project.png" alt="Dumbways Web Screenshot" class="project-img" />
+                        </div>
+                        <div class="project-content">
+                            <h3>Dumbways Web</h3>
+                            <p>
+                                This app is a personal portfolio website to showcase a developer’s profile and projects. The homepage displays a brief introduction along with links to download the CV and social media.
+                                Users can add new projects with details like project name, dates, description, technologies used, and project image.
+                                There is also a contact page where visitors can send messages directly to the developer.
+                            </p>
+
+                            <div class="tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express.js</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/noewebstar/website-portofolio-dw.git" class="git" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://fakturly-demo.com" class="fakturly" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+        <div class="full-line-wrappers">
+            <div class="contacts">
+                <div>
+                    <h1>Let's build something together</h1>
+                </div>
+                <div>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                </div>
+                <div class="contact-link">
+                    <span>
+                        <a href="mailto:intancn15@email.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-envelope"></i> intancn15@email.com
+                        </a>    
+                    </span>
+                    <span>
+                        <a href="http://wa.me/6285393206343" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> +62 853-9320-6343
+                        </a>
+                    </span>
+                </div>    
+            </div>
+        </div>  
+        <div>
+            <footer class="simple-footer">
+                <p>© 2025 Made with ☕ and curiosity — <span class="footer-name">Intan Cahya Nabila</span></p>
+            </footer>
+        </div>
+    </div>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.navbar ul');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        </script>
+
+    <script src="index.js"></script>
+</body>
+</html>

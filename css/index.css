@@ -1,0 +1,354 @@
+html {
+  scroll-behavior: smooth;
+}
+#tech-stack,
+#experience,
+#projects {
+  scroll-margin-top: 5px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 50px;
+  padding: 50px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #151515;
+  
+}
+
+.row {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.col-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: xx-large;
+  
+}
+
+
+.paragraf{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(110, 110, 110);
+margin-top: -30px;
+    
+}
+.paragraf2{
+    font-size: 20px;
+    color: rgb(114, 114, 114);
+    
+}
+
+.gitHub{
+  color: #1e1e1e;
+  
+}
+.linkedin{
+  color: #1e1e1e;
+}
+.loc-dot{
+    font-size: 17px;
+    color: grey;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;       
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;      
+  overflow: hidden;   
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 100px;
+}
+
+.card:hover {
+  transform: scale(1.03);   
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;         
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(41, 167, 41);
+  border-radius: 50%;
+  margin: 0px 5px 0px 5px;
+}
+
+.action-buttons2{
+    display: flex;
+  gap: 30px;
+  align-items: center;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.grid{
+    margin: auto;
+  padding-top: 100px;
+  font-size: large;
+}
+
+a {
+  text-decoration: none;
+}
+
+body.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode .navbar ul li a{
+  color: #ddd;
+}
+body.dark-mode .navbar ul li a:hover {
+  color: #ff00aa;
+}
+
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+
+
+body.dark-mode a:hover {
+  color: #eee;
+}
+
+
+body.dark-mode .btn-wa {
+  background-color: #ff00aa;
+  color: #f8f5f5;;
+}
+
+body.dark-mode .btn-wa:hover {
+  background-color:  #ec029e;
+}
+
+body.dark-mode .btn-cv {
+  background-color: #f8f5f5;
+  color: #ff00aa;
+}
+
+body.dark-mode .btn-cv:hover {
+  background-color: #e9e7e7;
+  color: #ff00aa;
+}
+
+body.dark-mode .fa-moon {
+  display: none;
+}
+
+body.dark-mode .fa-sun {
+  display: inline;
+  cursor: pointer;
+  color: #ffcc00;
+}
+
+body.dark-mode .paragraf  {
+    color: #d6d6d6;
+    
+}
+body.dark-mode  .paragraf2 {
+    color: #d6d6d6;
+}
+body.dark-mode .loc-dot  {
+    color: #d6d6d6;
+}
+
+body.dark-mode h1{
+  color: #ff00aa;
+}
+
+body.dark-mode .tech-name{
+  color: #ddd;
+}
+body.dark-mode h3{
+  color: #ddd;
+}
+body.dark-mode .date{
+  color: #ddd;
+}
+body.dark-mode .experience-card{
+  background-color: #1e1e1e;
+}
+body.dark-mode .project-card{
+  background-color: #1e1e1e;
+}
+body.dark-mode .project-content p{
+  color: #ddd;
+}
+body.dark-mody .company {
+  color: #10b948;
+}
+body.dark-mode .tag {
+  color: #f3f4f6;
+  background-color: #383838;
+}
+body.dark-mode li{
+  color: #ddd;
+}
+body.dark-mode .git{
+  color: #ddd;
+}
+body.dark-mode .contact-link a{
+  color: #ddd;
+}
+body.dark-mode .contact-link a:hover{
+  color: #afafaf;
+}
+
+body.dark-mode .gitHub{
+  color: #d6d6d6;
+}
+body.dark-mode .linkedin{
+  color: #d6d6d6;
+}
+
+
+.simple-footer {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 16px;
+  color: #555;
+}
+
+.simple-footer .footer-name {
+  font-weight: 600;
+  color: #333;
+}
+body.dark-mode .simple-footer {
+  color: #a09e9e;
+}
+
+body.dark-mode .simple-footer .footer-name {
+  color: #d4d3d3;
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    margin: 300px;
+    /* padding: 300px; */
+  }
+
+  .row {
+    gap: 30px;
+  }
+
+  .card {
+    margin-top: 50px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .col, .col-text {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .col-text {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .paragraf {
+    font-size: 20px;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  .paragraf2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .action-buttons2 {
+    display: flex;
+  flex-direction: row; /* tombol sejajar */
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: nowrap
+  }
+
+  .card {
+    margin: 20px auto;
+  }
+
+  .grid {
+    padding-top: 60px;
+    font-size: medium;
+  }
+
+  .simple-footer {
+    font-size: 14px;
+    padding-top: 60px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .paragraf {
+    font-size: 18px;
+  }
+
+  .paragraf2 {
+    font-size: 14px;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+   .action-buttons2 .btn {
+    min-width: 100px;
+    font-size: 14px;
+    padding: 8px 12px;
+    flex-direction: row; /* tetap sejajar */
+    gap: 8px;
+  }
+
+  .simple-footer {
+    font-size: 13px;
+  }
+.col-text, .grid h1{
+  font-size: larger;
+  }
+}

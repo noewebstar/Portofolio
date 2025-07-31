@@ -1,0 +1,135 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.navbar img {
+  height: 30px;
+  padding-left: 30px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 600px;
+}
+
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #000;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-right: 30px;
+  font-size: small;
+}
+
+.btn-wa {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-wa:hover {
+  background-color: #1ebe5d;
+}
+
+
+.btn-cv {
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-cv:hover {
+  background-color: #333;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: #151515;
+  }
+
+  body.dark-mode .hamburger {
+    color: #ddd;
+  }
+.mode{
+  padding-right: 10px;
+}
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  body.dark-mode .navbar ul {
+    background-color: #1e1e1e;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .action-buttons a {
+    display: none;
+    
+}
+
+}
+

@@ -1,0 +1,171 @@
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px ;
+  padding-bottom: 100px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 1px 1px rgba(0.03, 0.02, 0.02, 0.09);
+  overflow: hidden;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+    }
+
+.project-card:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08); 
+      
+}
+.project-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff8676, #ff1e00);
+}
+
+.project-img {
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.project-content p {
+  color: #555;
+  margin: 10px 0 15px;
+  font-size: 14px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.project-links {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 20px;  
+  font-size: 14px;
+  align-items: center;
+}
+
+.project-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.git{
+    color: #555;
+}
+
+.fakturly{
+    color: #2b7cff;
+}
+
+@media (max-width: 1024px) {
+  .project-card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-img-wrapper {
+    height: 180px;
+    padding: 15px;
+  }
+
+  .project-img {
+    max-height: 160px;
+  }
+
+  .project-content h3 {
+    font-size: 18px;
+  }
+
+  .project-content p {
+    font-size: 14px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .project-links {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-content {
+    padding: 15px;
+  }
+
+  .project-img-wrapper {
+    height: 150px;
+    padding: 10px;
+  }
+
+  .project-img {
+    max-height: 130px;
+  }
+
+  .project-content h3 {
+    font-size: 16px;
+  }
+
+  .project-content p {
+    font-size: 13px;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+
+  .project-links {
+    gap: 10px;
+    font-size: 12px;
+  }
+}
