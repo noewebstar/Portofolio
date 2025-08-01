@@ -1,10 +1,16 @@
-const darkModeToggle = document.getElementById('darkModeToggle');
+document.addEventListener('DOMContentLoaded', function () {
+  const darkModeToggle = document.getElementById('darkModeToggle');
   const lightModeToggle = document.getElementById('lightModeToggle');
 
-  if(localStorage.getItem('theme') === 'dark'){
+  // Pastikan tombolnya ditemukan
+  if (!darkModeToggle || !lightModeToggle) return;
+
+  if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
     darkModeToggle.style.display = 'none';
     lightModeToggle.style.display = 'inline';
+  } else {
+    lightModeToggle.style.display = 'none';
   }
 
   darkModeToggle.addEventListener('click', () => {
@@ -20,6 +26,4 @@ const darkModeToggle = document.getElementById('darkModeToggle');
     darkModeToggle.style.display = 'inline';
     localStorage.setItem('theme', 'light');
   });
-
-
-
+});
