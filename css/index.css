@@ -59,6 +59,7 @@ margin-top: -30px;
 
 .gitHub{
   color: #1e1e1e;
+  padding: 10px;
   
 }
 .linkedin{
@@ -338,10 +339,10 @@ body.dark-mode .simple-footer .footer-name {
   }
 
    .action-buttons2 .btn {
-    min-width: 100px;
+    min-width: 10px;
     font-size: 14px;
-    padding: 8px 12px;
-    flex-direction: row; /* tetap sejajar */
+    padding: 6px 10px;
+    flex-direction: row; 
     gap: 8px;
   }
 
@@ -351,4 +352,20 @@ body.dark-mode .simple-footer .footer-name {
 .col-text, .grid h1{
   font-size: larger;
   }
+
+.gitHub, .linkedin{
+  padding: 10px;
 }
+ .action-buttons2 a{
+  font-size: 10px;
+ }
+.loc-dot{
+  font-size: 10px;
+}
+
+.status-dot{
+  width: 5px;
+  height: 5px;
+}
+}
+
