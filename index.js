@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const darkModeToggle = document.getElementById('darkModeToggle');
   const lightModeToggle = document.getElementById('lightModeToggle');
 
-  // Pastikan tombolnya ditemukan
+
   if (!darkModeToggle || !lightModeToggle) return;
 
   if (localStorage.getItem('theme') === 'dark') {
